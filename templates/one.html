@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            h1{
+                font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+                color: brown;
+            }
+            p{
+                color: #C70039;
+            }
+        </style>
+    </head>
+    <body style="background: linear-gradient(to right,#2E86C1 ,#C70039)">
+        <h1>This is my first flask project</h1>
+        {% if u %}
+        <p>Welcome user {{ u }}</p>
+        {% endif %}
+        {% if d %}
+        {% for key,value in d.items() %}
+        <h1>{{ key }}={{ value }}</h1>
+        {% endfor %}
+        {% endif %}
+    </body>
+</html>
